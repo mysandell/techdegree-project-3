@@ -172,7 +172,7 @@ textarea {
   background-color: #eff0f1;
 }
 
-input[placeholder] {
+input::placeholder {
   color: #adb2b7;
   font-family: 'Noticia Text', serif;
   font-size: 1.2em;

@@ -1,0 +1,339 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  text-align: center;
+  font-family: 'Noticia Text', serif;
+  font-size: 1em;
+  color: black;;
+  background-color: #eefdfc;
+  width: 100%;
+}
+
+
+/* ===============
+    LAYOUT CONTAINERS
+=================== */
+
+
+.wrapper {
+  min-width: 320px;
+  background-color: #eefdfc;
+  margin: 0;
+}
+
+.header {
+  background-color: black;
+  width: 100%;
+}
+
+.signup {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.footer {
+  font-size: 1em;
+  color: #838787;
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  padding: 25px;
+  font-size: 1.8em;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+  color: #838787;
+  padding-bottom: 30px;
+}
+
+/* Form features */
+
+.form-top-border {
+  border-top: 6px solid black;
+  margin-bottom: 6px;
+}
+
+.form-second-border {
+    border-top: 2px solid black;
+}
+
+.form-section {
+  border: none;
+  margin-bottom: 20px;
+}
+
+.section-head {
+  display: inline-block;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.5em;
+  padding-top: 30px;
+  margin-top: 0;
+}
+
+.field-top,
+.field-bottom {
+  display: block;
+  font-size: 1.3em;
+  color: #838787;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+
+.news-type {
+  display: block;
+  font-size: 1.3em;
+  line-height: 2;
+  color: #838787;
+  text-align: left;
+}
+
+
+/* Form-field and pseudo class features */
+
+.textbox,
+.bottom {
+  width: 100%;
+  height: 70px;
+  outline: 0;
+	border: none;
+	margin-top: 15px;
+  padding-left: 15px;
+	border-radius: .3em;
+	border: 2px solid #989a9c;
+  background-color: #eff0f1;
+  transition-duration: .5s;
+  transition-property: background-color;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #46698b;
+}
+
+.textbox:active,
+.textbox:focus {
+  background-color: white;
+  text-align: left;
+}
+
+.bottom {
+  height: 200px;
+}
+
+.zip {
+  width: 50%;
+  display: block;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  outline: 0;
+	border: none;
+	margin-top: 15px;
+  padding: 15px;
+	border-radius: .3em;
+	border: 2px solid white;
+  background-color: #eff0f1;
+}
+
+input[placeholder] {
+  color: #adb2b7;
+  font-family: 'Noticia Text', serif;
+  font-size: 1.2em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 15px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #adb2b7;
+  font-family: 'Noticia Text', serif;
+  font-size: 1.2em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 15px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #adb2b7;
+  font-family: 'Noticia Text', serif;
+  font-size: 1.2em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 15px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #adb2b7;
+  font-family: 'Noticia Text', serif;
+  font-size: 1.2em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 15px;
+}
+
+select {
+  font-family: 'Noticia Text', serif;
+  color: #adb2b7;
+  font-size: 1.2em;
+  padding-left: 10px;
+        -webkit-appearance: none;  /*Removes default chrome and safari style*/
+        -moz-appearance: none; /* Removes Default Firefox style*/
+  }
+
+
+select:hover {
+  color: #46698b;
+}
+
+.check-label {
+  margin-left: 15px;
+}
+
+
+.btn {
+  cursor: pointer;
+  font-family: 'Noticia Text', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: .85;
+}
+
+.default {
+  background-color: #4ebbb5;
+  border-radius: .5em;
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+
+/* input:focus:invalid, textarea:focus:invalid { */
+  /* when a field is considered invalid by the browser */
+    /* border: 3px solid red;
+} */
+
+input:required:invalid {
+  /* when a field is considered invalid by the browser */
+    border: 3px solid red;
+}
+
+input:required:valid {
+   /* when a field is considered valid by the browser */
+    border: 3px solid green;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+
+@media (min-width: 769px) {
+
+  /* .inln {
+  width: auto;
+  display: inline-block;
+} */
+
+.signup {
+  width: 85%;
+  margin: 50px auto;
+}
+
+.field-top {
+  display: block;
+  width: 18%;
+  float: left;
+}
+
+.textbox {
+  margin-left: 20%;
+  display: block;
+  margin-top: 20px;
+  width: 79%;
+}
+
+.bottom {
+ margin: 0;
+ width: 100%;
+
+}
+
+.zip {
+  width: 50%;
+  display: block;
+  margin-top: 0;
+}
+
+.field-bottom {
+  display: block;
+  font-size: 1.3em;
+  color: #989a9c;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+
+ select {
+        width: 70%;/*Width of select dropdown to give space for arrow image */
+      }
+
+    }
+
+  /* =========
+  CLEARFIX
+  ============ */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
